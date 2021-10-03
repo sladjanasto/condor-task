@@ -3,3 +3,17 @@
 hr{
     border: 1px dashed $dark-gray;
 }
+cite{
+    font-size: 22px;
+    font-size: 1.5rem;
+    line-height: 1.75;
+    display: inline-block;
+}
+p{
+    @include breakpoint(xxs){
+        margin:0 20px;
+    }
+    @include breakpoint(md){
+        margin:0px;
+    }
+}

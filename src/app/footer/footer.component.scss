@@ -19,7 +19,21 @@ footer{
             padding: 5px 10px;
             color: #fff;
             font-size: 11px;
-            font-weight: 600;
+            font-weight: 100;
+            font-family: $default-font-family;
         }
     }
+}
+span{
+    color:white;
+    margin:0 auto;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 10px !important;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-align: center;
+    margin: 20px 15px;
+    font-family: $default-font-family;
 }

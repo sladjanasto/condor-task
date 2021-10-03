@@ -1,0 +1,27 @@
+@import '/src/app/Sass/base.scss';
+p{
+    text-align: center;
+}
+img{
+    max-width: 75%;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+.carousel-item{
+    display:flex;
+}
+.item-text,.item-img{
+    padding:0;
+    vertical-align: middle;
+}
+cite{
+    text-align: left;
+}
+.item-img{
+    @include breakpoint(xxs){
+        display:none;
+    }
+    @include breakpoint(md){
+        display:block;
+    }
+}

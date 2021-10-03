@@ -1,0 +1,9 @@
+@import '/src/app/Sass/base.scss';
+
+button{
+    background: $brand-color;
+    border:0;
+    border-radius: 0;
+    color: white;
+    padding:10px 60px;
+}

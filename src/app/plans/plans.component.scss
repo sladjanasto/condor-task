@@ -1,6 +1,5 @@
 @import '/src/app/Sass/base.scss';
 section{
-    background-image: url('/assets/main-index-side-image.png');
     margin: 30px 0 0 0;
     background-size: contain;
     background-repeat: no-repeat;
@@ -8,6 +7,15 @@ section{
     h3{
         color:$brand-color;
     }
+    @include breakpoint(xxs){
+        background-image: none;
+    }
+    @include breakpoint(lg){
+        background-image: url('/assets/main-index-side-image.png');
+    }
+}
+.col-md-7.col-lg-7{
+    padding:0;
 }
 .plans-grid {
     margin: 40px 0 0 0;
@@ -15,6 +23,12 @@ section{
     border: 2px solid #eeeeee;
     border-radius: 10px;
     box-shadow: 0px 0px 40px 0px rgb(0 0 0 / 25%);
+    @include breakpoint(xxs){
+        display:none;
+    }
+    @include breakpoint(md){
+        display:block;
+    }
     .plan{
         text-align: left;
         border-radius: 15px;

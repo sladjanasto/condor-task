@@ -1,26 +1,23 @@
- <section class="testimonials">
-        <div class="container">
-            <h1>TESTIMONIALS</h1>
-            <p>Here's why our partners choose us.</p>
+<section class="testimonials">
+    <div class="container">
+        <h1>TESTIMONIALS</h1>
+        <p>Here's why our partners choose us.</p>
             <hr class="divider">
             <div id="carouselExampleSlidesOnly" class="carousel-fade" data-ride="carousel">
                 <div class="carousel-inner" >
                   <div class="carousel-item active" *ngFor="let testimonial of testimonials let i = index;" [ngClass]="{'active': i == 0}" >
-                    <div class="col-md-12">
-                        <div class="col-md-8">
-                        <p><sub class="quote">“</sub>{{testimonial.text}}<sub class="quote">”</sub><br>
-                        </p>
+                    <div class="col-md-12 d-flex align-items-center">
+                        <div class="col-md-8 item-text">
+                            <p><cite>{{testimonial.text}}</cite>
+                            </p>
                         </div>
-                        <div class="col-md-4">
-                        <a href="https://www.thebigfreechiplist.com/"><img alt="" class="img-responsive loading" src="{{ testimonial.src}}">
-                        </a>
+                        <div class="col-md-4 item-img">
+                            <a href="https://www.thebigfreechiplist.com/"><img alt="" class="img-responsive loading" src="{{ testimonial.src}}">
+                            </a>
                         </div>
-                        </div>
+                      </div>
                   </div>
-              
-                
-                
                 </div>
               </div>
-        </div>
-    </section>
+      </div>
+</section>

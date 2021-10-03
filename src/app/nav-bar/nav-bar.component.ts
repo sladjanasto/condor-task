@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-nav-bar',
@@ -8,10 +9,16 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 })
 export class NavBarComponent implements OnInit {
 
-  constructor() { }
+  title = 'CondorTest';
+  constructor(private titleService: Title){}
+  setDocTitle(title: string) {
+    console.log('current title:::::' + this.titleService.getTitle());
+    this.titleService.setTitle(title);
+ }
 
   ngOnInit(): void {
 
   }
+  
 
 }

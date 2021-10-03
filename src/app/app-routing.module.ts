@@ -7,19 +7,44 @@ import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
   {
-    path: '', component: HomeComponent
+    path: '', component: HomeComponent,
+    data:{
+      seo: {
+        title: 'Home | Condor Affiliates'
+      }
+    }
   },
   {
-    path: 'home', component: HomeComponent
+    path: 'home', component: HomeComponent,
+    data:{
+      seo: {
+        title: 'Home | Condor Affiliates'
+      }
+    }
   },
   {
-    path: 'about', component: AboutComponent
+    path: 'about', component: AboutComponent,
+    data:{
+      seo: {
+        title: 'About | Condor Affiliates'
+      }
+    }
   },
   {
-    path: 'brands', component: BrandsComponent
+    path: 'brands', component: BrandsComponent,
+    data:{
+      seo: {
+        title: 'Brands | Condor Affiliates'
+      }
+    }
   },
   {
-    path: 'contact', component: ContactComponent
+    path: 'contact', component: ContactComponent,
+    data:{
+      seo: {
+        title: 'Contact | Condor Affiliates'
+      }
+    }
   }
 
 ];
