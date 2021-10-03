@@ -1,0 +1,35 @@
+// colors
+$brand-color: #e40175;
+$dark-gray: #525252;
+$light-gray: #efefef;
+
+// Heading sizes
+
+$h1: 20px;
+$h2: 18px;
+$h3: 20px;
+$h4: 18px;
+$p: 18px;
+$s: 14px;
+
+// Font 
+$default-font-size: 16px;
+
+
+$default-font-family: 'Popins', sans-serif;
+
+
+// Spaces
+
+
+
+
+$breakpoints: (
+	"xxs":	0,
+	"xs":	400px,
+	"sm":	525px,
+	"md":	768px,
+	"lg":	992px,
+	"xl":	1200px,
+	"xxl":	1600px
+);

@@ -1,0 +1,10 @@
+@import '/src/app/Sass/base.scss';
+section{
+    background-color: $dark-gray;
+    h3{
+        color: white;
+    }
+    p{
+        color: white;
+    }
+}
